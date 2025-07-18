@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malvika Jadhav - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <div class="mode-indicator" id="modeIndicator">
+            <i class="fas fa-shield-alt"></i>
+            Cybersecurity Mode
+        </div>
+        <button id="themeToggle" class="toggle-btn">
+            <div class="toggle-slider">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Malvika Jadhav</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#updates">Life in Beta</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero/About Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="profile.jpeg" alt="Your Photo" class="profile-photo">
+                <div class="photo-frame"></div>
+            </div>
+            <div class="hero-text">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <div class="terminal-button close"></div>
+                            <div class="terminal-button minimize"></div>
+                            <div class="terminal-button maximize"></div>
+                        </div>
+                        <div class="terminal-title">terminal</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">mj@portfolio</span>
+                            <span class="terminal-command" id="terminalCommand"></span>
+                            <span class="terminal-cursor">|</span>
+                        </div>
+                        <div class="terminal-output" id="terminalOutput"></div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn primary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </button>
+                    <button class="btn secondary" onclick="scrollToContact()">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="stats-section">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Research</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="mode-info">
+            <div class="mode-badge">
+                <i class="fas fa-lightbulb"></i>
+                <span>Toggle switch above to see different project domains</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="updates">
+        <div class="container">
+            <h2>Life in Beta</h2>
+            <p class="section-description">Latest updates and cool things happening to me!</p>
+            <div class="updates-timeline" id="updatesTimeline">
+                <!-- Updates populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p class="section-description">   </p>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <!-- <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <div class="skill-items" id="primarySkills">
+                        Skills populated by JavaScript -->
+    <section id="skills" class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid" id="skillsGrid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:jadhav.m@ufl.edu" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">jadhav.m@ufl.edu</div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/malvika-jadhav" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div>
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">linkedin.com/in/malvika-jadhav</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/malvikajadhav" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">github.com/malvikajadhav</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
