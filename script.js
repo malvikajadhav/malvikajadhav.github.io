@@ -43,13 +43,13 @@ const cyberProjects = [
 
 const softwareProjects = [
     {
-        title: "Business Intelligence Dashboard",
-        description: "Interactive dashboard for real-time business analytics and key performance indicators.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-        icon: "fas fa-chart-line",
-        tags: ["React", "D3.js", "PostgreSQL"],
-        demo: "#",
-        code: "#"
+        title: " P2P File Sharing System",
+        description: "A distributed peer-to-peer file sharing protocol in Python, simulating BitTorrent behavior with custom TCP messaging, chunk-based file transfer, and adaptive choking/unchoking. Supports multi-host deployment, concurrency, and real-time logging across peers.",
+        image: "P2P.png",
+        icon: "fas fa-server",
+        tags: ["Python"],
+        demo: null,
+        code: "https://github.com/malvikajadhav/P2P-file-sharing.git"
     },
     {
         title: "ML Prediction Engine",
