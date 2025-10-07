@@ -420,7 +420,7 @@ function downloadResume() {
     // Create a link element and trigger download
     const link = document.createElement('a');
     link.href = 'resume.pdf'; // Make sure to add your resume.pdf file
-    link.download = 'Your_Name_Resume.pdf';
+    link.download = 'Malvika_Resume.pdf';
     link.click();
 }
 
