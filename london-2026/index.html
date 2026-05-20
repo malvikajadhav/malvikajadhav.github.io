@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Resources · Malvika Jadhav</title>
+    <meta name="description" content="Conference talk resources.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="../profile.jpeg">
+
+    <style>
+        .talk-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1rem 5rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--accent);
+        }
+        .talk-header {
+            border-left: 6px solid var(--accent);
+            padding-left: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .talk-eyebrow {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+        }
+        .talk-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.6rem;
+            line-height: 1.2;
+        }
+        .talk-title em {
+            color: var(--accent);
+            font-style: italic;
+        }
+        .talk-byline {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+        .talk-venue {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .safety-banner {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent);
+            color: var(--text-primary);
+            padding: 1.1rem 1.3rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .safety-banner strong {
+            color: var(--accent);
+            letter-spacing: 1.5px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .talk-section {
+            margin-bottom: 2.5rem;
+        }
+        .talk-section h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            margin-bottom: 0.9rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .talk-card {
+            display: block;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            padding: 1.1rem 1.2rem;
+            margin-bottom: 0.7rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            border-radius: 0.5rem;
+            transition: var(--transition);
+        }
+        .talk-card:hover {
+            transform: translateX(3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .talk-card .card-name {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 0.35rem;
+            color: var(--text-primary);
+        }
+        .talk-card .card-url {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+            word-break: break-all;
+            font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        }
+        .talk-card .card-desc {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .paper-block {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+        }
+        .paper-block .paper-authors {
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            font-size: 1.05rem;
+        }
+        .paper-block .paper-title {
+            font-style: italic;
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .paper-block a {
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--accent);
+            font-family: ui-monospace, "SF Mono", Menlo, monospace;
+            font-size: 0.95rem;
+        }
+        .paper-block a:hover {
+            color: var(--accent-hover);
+            border-bottom-color: var(--accent-hover);
+        }
+        .talk-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+
+<div class="talk-container">
+
+    <a href="../" class="back-link">
+        <i class="fas fa-arrow-left"></i>&nbsp; Back to homepage
+    </a>
+
+    <header class="talk-header">
+        <div class="talk-eyebrow">Tech Abuse Conference · London 2026</div>
+        <h1 class="talk-title">When Your Threat Model <em>Lives With You</em></h1>
+        <div class="talk-byline">Malvika Jadhav</div>
+        <div class="talk-venue">Florida Institute for Cybersecurity Research, University of Florida</div>
+    </header>
+
+    <section class="talk-section">
+        <h2>The paper</h2>
+        <div class="paper-block">
+            <div class="paper-authors">Jadhav, Bao, Bindschaedler.</div>
+            <div class="paper-title">Thwart Me If You Can: An Empirical Analysis of Android Platform Armoring Against Stalkerware.</div>
+            <a href="https://arxiv.org/abs/2508.02454" target="_blank" rel="noopener">arXiv:2508.02454</a>
+        </div>
+    </section>
+
+    <section class="talk-section">
+        <h2>Talk slides</h2>
+        <a class="talk-card" href="talk_slides.pdf">
+            <div class="card-name"><i class="fas fa-file-pdf"></i>&nbsp; Download the slides (PDF)</div>
+            <div class="card-url">talk_slides.pdf</div>
+            <div class="card-desc">Prsented at UCL Tech Abuse Conference.</div>
+        </a>
+    </section>
+
+    <section class="talk-section">
+        <h2>UK frontline support</h2>
+
+        <a class="talk-card" href="https://refugetechsafety.org" target="_blank" rel="noopener">
+            <div class="card-name">Refuge — Tech Abuse Team</div>
+            <div class="card-url">refugetechsafety.org</div>
+            <div class="card-desc">UK specialist tech-abuse support for survivors.</div>
+        </a>
+
+        <a class="talk-card" href="tel:08082000247">
+            <div class="card-name"><i class="fas fa-phone"></i>&nbsp; National Domestic Abuse Helpline</div>
+            <div class="card-url">0808 2000 247</div>
+            <div class="card-desc">Free, 24/7, run by Refuge. Safety planning included.</div>
+        </a>
+    </section>
+
+    <section class="talk-section">
+        <h2>International research &amp; advocacy</h2>
+
+        <a class="talk-card" href="https://stopstalkerware.org" target="_blank" rel="noopener">
+            <div class="card-name">Coalition Against Stalkerware</div>
+            <div class="card-url">stopstalkerware.org</div>
+            <div class="card-desc">International alliance. Source of this study's data.</div>
+        </a>
+
+        <a class="talk-card" href="https://www.techabuseclinics.org" target="_blank" rel="noopener">
+            <div class="card-name">Tech Abuse Clinics</div>
+            <div class="card-url">techabuseclinics.org</div>
+            <div class="card-desc">Pro-bono clinical computer-security model. CETA, TECC, MTC.</div>
+        </a>
+
+        <a class="talk-card" href="https://www.techsafety.org" target="_blank" rel="noopener">
+            <div class="card-name">NNEDV Safety Net</div>
+            <div class="card-url">techsafety.org</div>
+            <div class="card-desc">Publicly available survivor guides on tech-facilitated abuse.</div>
+        </a>
+    </section>
+
+
+    <section class="talk-section">
+        <h2>Contact</h2>
+        <a class="talk-card" href="mailto:jadhav.m@ufl.edu">
+            <div class="card-name"><i class="fas fa-envelope"></i>&nbsp; Malvika Jadhav</div>
+            <div class="card-url">jadhav.m@ufl.edu</div>
+            <div class="card-desc">Questions, follow-up, research collaboration.</div>
+        </a>
+    </section>
+
+    <footer class="talk-footer">
+        Page last updated: May 2026. Research conducted at the Florida Institute for Cybersecurity Research, University of Florida. 
+    </footer>
+
+</div>
+
+</body>
+</html>
