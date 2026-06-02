@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Resources · ASIA CCS ’26 · Malvika Jadhav</title>
+<meta name="description" content="Conference talk resources."><meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link rel="icon" href="../profile.jpeg">
+<style>
+  /* fallback copy of your style.css tokens so this page renders correctly even in a
+     standalone preview; identical values, so style.css stays the source of truth on-site */
+  :root{ --bg-primary:#ffffff; --bg-secondary:#f8fafc; --text-primary:#1e293b; --text-secondary:#64748b; --accent:#3b82f6; --accent-hover:#2563eb; --border:#e2e8f0; --transition:all .3s ease; }
+  [data-theme="dark"]{ --bg-primary:#0f172a; --bg-secondary:#1e293b; --text-primary:#10b981; --text-secondary:#06d6a0; --accent:#10b981; --accent-hover:#059669; --border:#334155; }
+  body{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg-primary); color:var(--text-primary); line-height:1.6; margin:0; transition:var(--transition); }
+
+  .talk-container{max-width:720px;margin:0 auto;padding:2rem 1rem 5rem;}
+  .back-link{display:inline-block;margin-bottom:1.5rem;color:var(--text-secondary);text-decoration:none;font-size:.95rem;transition:var(--transition);} .back-link:hover{color:var(--accent);}
+  .talk-header{border-left:6px solid var(--accent);padding-left:1.2rem;margin-bottom:2rem;}
+  .talk-eyebrow{font-size:.8rem;letter-spacing:2px;color:var(--accent);font-weight:700;text-transform:uppercase;margin-bottom:.6rem;}
+  .talk-title{font-family:Georgia,"Times New Roman",serif;font-size:2rem;font-weight:700;color:var(--text-primary);margin-bottom:.6rem;line-height:1.2;} .talk-title em{color:var(--accent);font-style:italic;}
+  .talk-byline{font-weight:600;font-size:1.05rem;color:var(--text-primary);margin-bottom:.3rem;} .talk-venue{color:var(--text-secondary);font-size:.9rem;}
+  .talk-section{margin-bottom:2.5rem;}
+  .talk-section h2{font-family:Georgia,"Times New Roman",serif;font-size:1.4rem;color:var(--text-primary);margin-bottom:.9rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);}
+  .talk-section .lead{color:var(--text-secondary);font-size:.95rem;line-height:1.55;margin-bottom:1.1rem;} .talk-section .lead b{color:var(--text-primary);}
+  .talk-card{display:block;background:var(--bg-secondary);border:1px solid var(--border);border-left:4px solid var(--accent);padding:1.1rem 1.2rem;margin-bottom:.7rem;text-decoration:none;color:var(--text-primary);border-radius:.5rem;transition:var(--transition);}
+  .talk-card:hover{transform:translateX(3px);box-shadow:0 4px 12px rgba(0,0,0,.15);}
+  .talk-card .card-name{font-weight:700;font-size:1.05rem;margin-bottom:.35rem;}
+  .talk-card .card-url{color:var(--accent);font-size:.9rem;font-weight:600;margin-bottom:.35rem;word-break:break-all;font-family:ui-monospace,"SF Mono",Menlo,monospace;}
+  .talk-card .card-desc{color:var(--text-secondary);font-size:.9rem;}
+  .paper-block{background:var(--bg-secondary);border:1px solid var(--border);border-left:4px solid var(--accent);padding:1.2rem;border-radius:.5rem;}
+  .paper-block .paper-authors{font-weight:700;margin-bottom:.4rem;font-size:1.05rem;} .paper-block .paper-title{font-style:italic;margin-bottom:.8rem;color:var(--text-secondary);}
+  .paper-block a{color:var(--accent);font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent);font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:.95rem;} .paper-block a:hover{color:var(--accent-hover);border-bottom-color:var(--accent-hover);}
+  .talk-footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:.85rem;color:var(--text-secondary);line-height:1.6;}
+  .viz{background:var(--bg-secondary);border:1px solid var(--border);border-radius:.6rem;padding:1.2rem 1.1rem 1.3rem;}
+  .viz .stat-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:1.3rem;}
+  .viz .stat{flex:1 1 130px;background:var(--bg-primary);border:1px solid var(--border);border-radius:.5rem;padding:.8rem .9rem;}
+  .viz .stat .n{font-family:Georgia,serif;font-weight:700;font-size:1.7rem;line-height:1;color:var(--accent);} .viz .stat .c{font-size:.78rem;color:var(--text-secondary);margin-top:.35rem;}
+  .viz h3{font-family:Georgia,serif;font-size:1.05rem;color:var(--text-primary);margin:0 0 .3rem;} .viz .sub{font-size:.85rem;color:var(--text-secondary);margin-bottom:.9rem;}
+  .viz .chart,.viz .compchart{display:flex;align-items:flex-end;gap:5px;height:155px;border-bottom:2px solid var(--border);}
+  .viz .col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;position:relative;cursor:pointer;}
+  .viz .col .bar{width:100%;border-radius:4px 4px 0 0;background:var(--border);min-height:3px;} .viz .col.sel .bar{background:var(--accent);}
+  .viz .col .cnt{position:absolute;top:-14px;font-weight:700;font-size:8.5px;color:var(--text-secondary);white-space:nowrap;}
+  .viz .ccol{flex:1;height:100%;display:flex;flex-direction:column-reverse;border-radius:4px 4px 0 0;overflow:hidden;}
+  .viz .ccol .seg{width:100%;}
+  .viz .xaxis{display:flex;gap:5px;margin-top:5px;} .viz .xaxis .t{flex:1;text-align:center;font-weight:700;font-size:11px;color:var(--text-primary);}
+  .viz .xlab{text-align:center;font-size:10.5px;color:var(--text-secondary);margin-top:7px;}
+  .viz .capdetail{margin-top:13px;padding:12px 14px;border:1px dashed var(--border);border-radius:.5rem;font-size:.85rem;color:var(--text-secondary);} .viz .capdetail b{color:var(--text-primary);}
+  .viz .capdetail .row{display:flex;justify-content:space-between;margin-top:5px;} .viz .capdetail .row span:last-child{font-family:Georgia,serif;font-weight:700;color:#fb7185;}
+  .viz .legend{display:flex;gap:8px 14px;flex-wrap:wrap;font-size:11px;font-weight:600;color:var(--text-secondary);margin-top:13px;} .viz .legend span{display:inline-flex;align-items:center;} .viz .legend i{width:10px;height:10px;border-radius:3px;margin-right:5px;}
+</style>
+</head>
+<body data-theme="dark">
+<div class="talk-container">
+  <a href="../" class="back-link"><i class="fas fa-arrow-left"></i>&nbsp; Back to homepage</a>
+  <header class="talk-header">
+    <div class="talk-eyebrow">ASIA CCS ’26 · Bangalore, India</div>
+    <h1 class="talk-title">Uncovering the Deceptive Tactics of <em>Stalkerware</em></h1>
+    <div class="talk-byline">Malvika Jadhav</div>
+    <div class="talk-venue">Florida Institute for Cybersecurity Research, University of Florida</div>
+  </header>
+
+  <section class="talk-section"><h2>The paper</h2>
+    <div class="paper-block"><div class="paper-authors">Jadhav, Bao, Bindschaedler.</div>
+      <div class="paper-title">Uncovering the Deceptive Tactics of Stalkerware: A Large Scale Measurement Study.</div>
+      <a href="https://doi.org/10.1145/3779208.3806084" target="_blank" rel="noopener">doi.org/10.1145/3779208.3806084</a></div>
+  </section>
+
+  <section class="talk-section"><h2>Talk slides</h2>
+    <a class="talk-card" href="talk_slides.pdf"><div class="card-name"><i class="fas fa-file-pdf"></i>&nbsp; Download the slides (PDF)</div>
+      <div class="card-url">talk_slides.pdf</div><div class="card-desc">Presented at ASIA CCS ’26, Bangalore.</div></a>
+  </section>
+
+  <section class="talk-section"><h2>Explore the finding</h2>
+    <p class="lead">Nearly every stalkerware app says one thing in its store text and does another in its code. The <b>size</b> of that gap tracks how an app presents itself — honest disclosers are dual-use family and monitoring tools; the widest gaps are covert spyware.</p>
+    <div class="viz">
+      <div class="stat-row">
+        <div class="stat"><div class="n">98.6%</div><div class="c">of stalkerware apps carry a disclosure gap</div></div>
+        <div class="stat"><div class="n">14%</div><div class="c">of benign apps do</div></div>
+        <div class="stat"><div class="n">97.1%</div><div class="c">hide a capability they actually have</div></div>
+      </div>
+      <h3>How many capabilities do apps hide?</h3><p class="sub">Tap a bar to see what's hidden at that level.</p>
+      <div class="chart" id="chart"></div><div class="xaxis" id="xaxis1"></div>
+      <p class="xlab">number of capabilities an app hides or fakes &nbsp;→</p>
+      <div class="capdetail" id="capdetail"></div>
+      <h3 style="margin-top:1.6rem">How those apps position themselves</h3>
+      <p class="sub">Category share at each gap level (hand-labelled sample, ~10 apps/level). The covert “Mobile spy app” band grows as the gap widens.</p>
+      <div class="compchart" id="compchart"></div><div class="xaxis" id="xaxis2"></div>
+      <p class="xlab">number of capabilities an app hides or fakes &nbsp;→</p>
+      <div class="legend" id="legend"></div>
+    </div>
+  </section>
+
+  <section class="talk-section"><h2>Support &amp; reporting in India</h2>
+    <a class="talk-card" href="tel:181"><div class="card-name"><i class="fas fa-phone"></i>&nbsp; Women Helpline (national)</div>
+      <div class="card-url">181</div><div class="card-desc">24/7 helpline for women facing violence or distress — counselling, police, shelter and legal referral.</div></a>
+    <a class="talk-card" href="https://www.ncw.gov.in/ncw-cells/ncw-women-helpline/" target="_blank" rel="noopener"><div class="card-name">National Commission for Women — 24×7 helpline</div>
+      <div class="card-url">14490 · ncw.gov.in</div><div class="card-desc">Counselling and complaint registration for domestic violence, harassment and abuse.</div></a>
+    <a class="talk-card" href="https://cybercrime.gov.in" target="_blank" rel="noopener"><div class="card-name">National Cyber Crime Reporting Portal</div>
+      <div class="card-url">cybercrime.gov.in · helpline 1930</div><div class="card-desc">Government of India portal to report cyber-crime, with a dedicated focus on online harassment of women and children. Reports can be filed anonymously.</div></a>
+  </section>
+
+  <section class="talk-section"><h2>International research &amp; support</h2>
+    <a class="talk-card" href="https://stopstalkerware.org" target="_blank" rel="noopener"><div class="card-name">Coalition Against Stalkerware</div>
+      <div class="card-url">stopstalkerware.org</div><div class="card-desc">International alliance. Source of this study's data.</div></a>
+    <a class="talk-card" href="https://www.techsafety.org" target="_blank" rel="noopener"><div class="card-name">NNEDV Safety Net</div>
+      <div class="card-url">techsafety.org</div><div class="card-desc">Survivor guides on tech-facilitated abuse and device safety.</div></a>
+    <a class="talk-card" href="https://www.techabuseclinics.org" target="_blank" rel="noopener"><div class="card-name">Tech Abuse Clinics</div>
+      <div class="card-url">techabuseclinics.org</div><div class="card-desc">Pro-bono clinical computer-security help for survivors.</div></a>
+  </section>
+
+  <section class="talk-section"><h2>Contact</h2>
+    <a class="talk-card" href="mailto:jadhav.m@ufl.edu"><div class="card-name"><i class="fas fa-envelope"></i>&nbsp; Malvika Jadhav</div>
+      <div class="card-url">jadhav.m@ufl.edu</div><div class="card-desc">Questions, follow-up, research collaboration.</div></a>
+  </section>
+
+  <footer class="talk-footer">All figures are aggregate results — counts, percentages, and self-chosen positioning categories only; no app names, package IDs, hashes, or per-sample data. Corpus: the Stalkerware Threat List (Coalition Against Stalkerware), not redistributed here. Page last updated: June 2026 · Florida Institute for Cybersecurity Research, University of Florida.</footer>
+</div>
+<script>
+const COUNTS=[102, 360, 448, 697, 576, 622, 1904, 1407, 567, 160],CAPS={"1": [{"cap": "Location", "pct": 58.1, "dir": "hides"}, {"cap": "SMS", "pct": 21.4, "dir": "hides"}, {"cap": "Contacts", "pct": 8.1, "dir": "fakes"}, {"cap": "Social media", "pct": 5.6, "dir": "fakes"}], "2": [{"cap": "Location", "pct": 53.3, "dir": "hides"}, {"cap": "Social media", "pct": 34.4, "dir": "hides"}, {"cap": "Call recording", "pct": 29.5, "dir": "hides"}, {"cap": "SMS", "pct": 26.6, "dir": "hides"}], "3": [{"cap": "Call recording", "pct": 61.3, "dir": "hides"}, {"cap": "Location", "pct": 58.0, "dir": "hides"}, {"cap": "Social media", "pct": 44.9, "dir": "hides"}, {"cap": "Contacts", "pct": 30.3, "dir": "fakes"}], "4": [{"cap": "Location", "pct": 82.3, "dir": "hides"}, {"cap": "Call recording", "pct": 68.8, "dir": "hides"}, {"cap": "Call logging", "pct": 51.6, "dir": "hides"}, {"cap": "Calendar", "pct": 44.6, "dir": "hides"}], "5": [{"cap": "Location", "pct": 76.5, "dir": "hides"}, {"cap": "SMS", "pct": 72.3, "dir": "hides"}, {"cap": "Call recording", "pct": 66.1, "dir": "hides"}, {"cap": "Call logging", "pct": 64.3, "dir": "hides"}], "6": [{"cap": "MMS", "pct": 96.3, "dir": "hides"}, {"cap": "SMS", "pct": 95.1, "dir": "hides"}, {"cap": "Call recording", "pct": 92.8, "dir": "hides"}, {"cap": "Call logging", "pct": 76.2, "dir": "hides"}], "7": [{"cap": "MMS", "pct": 99.4, "dir": "hides"}, {"cap": "SMS", "pct": 99.0, "dir": "hides"}, {"cap": "Call recording", "pct": 96.1, "dir": "hides"}, {"cap": "Call logging", "pct": 86.4, "dir": "hides"}], "8": [{"cap": "SMS", "pct": 100, "dir": "hides"}, {"cap": "MMS", "pct": 100, "dir": "hides"}, {"cap": "Call recording", "pct": 99.5, "dir": "hides"}, {"cap": "Call logging", "pct": 91.9, "dir": "hides"}], "9": [{"cap": "SMS", "pct": 100, "dir": "hides"}, {"cap": "MMS", "pct": 100, "dir": "hides"}, {"cap": "Call recording", "pct": 100, "dir": "hides"}, {"cap": "Location", "pct": 99.4, "dir": "hides"}]},COMP={"0": {"Car locator": 4, "Family monitoring": 2, "Other / unclear": 2, "Parental Monitoring": 1, "Employee monitoring": 1}, "1": {"Parental Monitoring": 4, "Other / unclear": 3, "Car locator": 1, "Lost device locator": 1, "Employee monitoring": 1}, "2": {"Other / unclear": 5, "Parental Monitoring": 2, "Lost device locator": 1, "Family monitoring": 1, "Women's safety": 1}, "3": {"Other / unclear": 3, "Women's safety": 2, "Lost device locator": 2, "Employee monitoring": 1, "Mobile spy app": 1, "Car locator": 1}, "4": {"Mobile spy app": 3, "Other / unclear": 3, "Employee monitoring": 2, "Family monitoring": 1, "Lost device locator": 1}, "5": {"Mobile spy app": 5, "Parental Monitoring": 1, "Other / unclear": 1, "Lost device locator": 1, "Employee monitoring": 1, "Women's safety": 1}, "6": {"Mobile spy app": 4, "Other / unclear": 2, "Parental Monitoring": 2, "Car locator": 1, "Employee monitoring": 1}, "7": {"Mobile spy app": 4, "Car locator": 3, "Parental Monitoring": 2, "Other / unclear": 1}, "8": {"Mobile spy app": 4, "Employee monitoring": 3, "Parental Monitoring": 2, "Car locator": 1}, "9": {"Mobile spy app": 8, "Car locator": 1, "Employee monitoring": 1}},ORDER=["Car locator", "Lost device locator", "Parental Monitoring", "Family monitoring", "Employee monitoring", "Women's safety", "Mobile spy app", "Other / unclear"],COLORS={"Car locator": "#38bdf8", "Lost device locator": "#22d3ee", "Parental Monitoring": "#a78bfa", "Family monitoring": "#c084fc", "Employee monitoring": "#fbbf24", "Women's safety": "#f472b6", "Mobile spy app": "#fb7185", "Other / unclear": "#64748b"};
+const max=Math.max(...COUNTS);
+// distribution bar graph
+const chart=document.getElementById('chart'),x1=document.getElementById('xaxis1'),cap=document.getElementById('capdetail');
+COUNTS.forEach((c,g)=>{const col=document.createElement('div');col.className='col';col.dataset.g=g;
+ col.innerHTML=`<span class="cnt">${c.toLocaleString()}</span><div class="bar" style="height:${Math.max(3,c/max*100)}%"></div>`;
+ col.onclick=()=>sc(g);col.onmouseenter=()=>sc(g);chart.appendChild(col);
+ const t=document.createElement('div');t.className='t';t.textContent=g;x1.appendChild(t);});
+function sc(g){document.querySelectorAll('.col').forEach(c=>c.classList.toggle('sel',+c.dataset.g===g));
+ const l=CAPS[g];cap.innerHTML=l?`At a gap of <b>${g}</b>, apps most often:`+l.map(o=>`<div class="row"><span>${o.dir} <b>${o.cap}</b></span><span>${o.pct}%</span></div>`).join(''):`At a gap of <b>${g}</b> there’s no single dominant pattern.`;}
+// composition bar graph (vertical 100% stacked)
+const cc=document.getElementById('compchart'),x2=document.getElementById('xaxis2');
+for(let g=0;g<10;g++){const m=COMP[g]||{},tot=Object.values(m).reduce((a,b)=>a+b,0)||1;
+ const col=document.createElement('div');col.className='ccol';
+ col.innerHTML=ORDER.filter(l=>m[l]).map(l=>`<div class="seg" title="${l}: ${m[l]} of ${tot}" style="height:${m[l]/tot*100}%;background:${COLORS[l]}"></div>`).join('');
+ cc.appendChild(col);
+ const t=document.createElement('div');t.className='t';t.textContent=g;x2.appendChild(t);}
+document.getElementById('legend').innerHTML=ORDER.map(l=>`<span><i style="background:${COLORS[l]}"></i>${l}</span>`).join('');
+sc(6);
+</script>
+</body></html>
