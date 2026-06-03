@@ -62,8 +62,7 @@
 
   <section class="talk-section"><h2>The paper</h2>
     <div class="paper-block"><div class="paper-authors">Jadhav, Bao, Bindschaedler.</div>
-      <div class="paper-title">Uncovering the Deceptive Tactics of Stalkerware: A Large Scale Measurement Study.</div>
-      <a href="https://doi.org/10.1145/3779208.3806084" target="_blank" rel="noopener">doi.org/10.1145/3779208.3806084</a></div>
+      <div class="paper-title">Uncovering the Deceptive Tactics of Stalkerware: A Large Scale Measurement Study.</div></div>
   </section>
 
   <section class="talk-section"><h2>Talk slides</h2>
@@ -72,14 +71,14 @@
   </section>
 
   <section class="talk-section"><h2>Explore the finding</h2>
-    <p class="lead">Nearly every stalkerware app says one thing in its store text and does another in its code. The <b>size</b> of that gap tracks how an app presents itself — honest disclosers are dual-use family and monitoring tools; the widest gaps are covert spyware.</p>
+    <p class="lead">Nearly every stalkerware app says one thing in its store text and does another in its code. The <b>size</b> of that gap tracks how an app presents itself. Honest disclosers are dual-use family and monitoring tools; the widest gaps are covert spyware.</p>
     <div class="viz">
       <div class="stat-row">
         <div class="stat"><div class="n">98.6%</div><div class="c">of stalkerware apps carry a disclosure gap</div></div>
         <div class="stat"><div class="n">14%</div><div class="c">of benign apps do</div></div>
         <div class="stat"><div class="n">97.1%</div><div class="c">hide a capability they actually have</div></div>
       </div>
-      <h3>How many capabilities do apps hide?</h3><p class="sub">Tap a bar to see what's hidden at that level.</p>
+      <h3>How many capabilities do apps hide?</h3><p class="sub">Tap a bar to see which capabilities apps under- or over-disclose at that gap (share of all apps at that level).</p>
       <div class="chart" id="chart"></div><div class="xaxis" id="xaxis1"></div>
       <p class="xlab">number of capabilities an app hides or fakes &nbsp;→</p>
       <div class="capdetail" id="capdetail"></div>
@@ -93,8 +92,8 @@
 
   <section class="talk-section"><h2>Support &amp; reporting in India</h2>
     <a class="talk-card" href="tel:181"><div class="card-name"><i class="fas fa-phone"></i>&nbsp; Women Helpline (national)</div>
-      <div class="card-url">181</div><div class="card-desc">24/7 helpline for women facing violence or distress — counselling, police, shelter and legal referral.</div></a>
-    <a class="talk-card" href="https://www.ncw.gov.in/ncw-cells/ncw-women-helpline/" target="_blank" rel="noopener"><div class="card-name">National Commission for Women — 24×7 helpline</div>
+      <div class="card-url">181</div><div class="card-desc">24/7 helpline for women facing violence or distress, counselling, police, shelter and legal referral.</div></a>
+    <a class="talk-card" href="https://www.ncw.gov.in/ncw-cells/ncw-women-helpline/" target="_blank" rel="noopener"><div class="card-name">National Commission for Women, 24×7 helpline</div>
       <div class="card-url">14490 · ncw.gov.in</div><div class="card-desc">Counselling and complaint registration for domestic violence, harassment and abuse.</div></a>
     <a class="talk-card" href="https://cybercrime.gov.in" target="_blank" rel="noopener"><div class="card-name">National Cyber Crime Reporting Portal</div>
       <div class="card-url">cybercrime.gov.in · helpline 1930</div><div class="card-desc">Government of India portal to report cyber-crime, with a dedicated focus on online harassment of women and children. Reports can be filed anonymously.</div></a>
@@ -114,7 +113,7 @@
       <div class="card-url">jadhav.m@ufl.edu</div><div class="card-desc">Questions, follow-up, research collaboration.</div></a>
   </section>
 
-  <footer class="talk-footer">All figures are aggregate results — counts, percentages, and self-chosen positioning categories only; no app names, package IDs, hashes, or per-sample data. Corpus: the Stalkerware Threat List (Coalition Against Stalkerware), not redistributed here. Page last updated: June 2026 · Florida Institute for Cybersecurity Research, University of Florida.</footer>
+  <footer class="talk-footer">Corpus acquired through the Stalkerware Threat List (Coalition Against Stalkerware). Page last updated: June 2026.</footer>
 </div>
 <script>
 const COUNTS=[102, 360, 448, 697, 576, 622, 1904, 1407, 567, 160],CAPS={"1": [{"cap": "Location", "pct": 58.1, "dir": "hides"}, {"cap": "SMS", "pct": 21.4, "dir": "hides"}, {"cap": "Contacts", "pct": 8.1, "dir": "fakes"}, {"cap": "Social media", "pct": 5.6, "dir": "fakes"}], "2": [{"cap": "Location", "pct": 53.3, "dir": "hides"}, {"cap": "Social media", "pct": 34.4, "dir": "hides"}, {"cap": "Call recording", "pct": 29.5, "dir": "hides"}, {"cap": "SMS", "pct": 26.6, "dir": "hides"}], "3": [{"cap": "Call recording", "pct": 61.3, "dir": "hides"}, {"cap": "Location", "pct": 58.0, "dir": "hides"}, {"cap": "Social media", "pct": 44.9, "dir": "hides"}, {"cap": "Contacts", "pct": 30.3, "dir": "fakes"}], "4": [{"cap": "Location", "pct": 82.3, "dir": "hides"}, {"cap": "Call recording", "pct": 68.8, "dir": "hides"}, {"cap": "Call logging", "pct": 51.6, "dir": "hides"}, {"cap": "Calendar", "pct": 44.6, "dir": "hides"}], "5": [{"cap": "Location", "pct": 76.5, "dir": "hides"}, {"cap": "SMS", "pct": 72.3, "dir": "hides"}, {"cap": "Call recording", "pct": 66.1, "dir": "hides"}, {"cap": "Call logging", "pct": 64.3, "dir": "hides"}], "6": [{"cap": "MMS", "pct": 96.3, "dir": "hides"}, {"cap": "SMS", "pct": 95.1, "dir": "hides"}, {"cap": "Call recording", "pct": 92.8, "dir": "hides"}, {"cap": "Call logging", "pct": 76.2, "dir": "hides"}], "7": [{"cap": "MMS", "pct": 99.4, "dir": "hides"}, {"cap": "SMS", "pct": 99.0, "dir": "hides"}, {"cap": "Call recording", "pct": 96.1, "dir": "hides"}, {"cap": "Call logging", "pct": 86.4, "dir": "hides"}], "8": [{"cap": "SMS", "pct": 100, "dir": "hides"}, {"cap": "MMS", "pct": 100, "dir": "hides"}, {"cap": "Call recording", "pct": 99.5, "dir": "hides"}, {"cap": "Call logging", "pct": 91.9, "dir": "hides"}], "9": [{"cap": "SMS", "pct": 100, "dir": "hides"}, {"cap": "MMS", "pct": 100, "dir": "hides"}, {"cap": "Call recording", "pct": 100, "dir": "hides"}, {"cap": "Location", "pct": 99.4, "dir": "hides"}]},COMP={"0": {"Car locator": 4, "Family monitoring": 2, "Other / unclear": 2, "Parental Monitoring": 1, "Employee monitoring": 1}, "1": {"Parental Monitoring": 4, "Other / unclear": 3, "Car locator": 1, "Lost device locator": 1, "Employee monitoring": 1}, "2": {"Other / unclear": 5, "Parental Monitoring": 2, "Lost device locator": 1, "Family monitoring": 1, "Women's safety": 1}, "3": {"Other / unclear": 3, "Women's safety": 2, "Lost device locator": 2, "Employee monitoring": 1, "Mobile spy app": 1, "Car locator": 1}, "4": {"Mobile spy app": 3, "Other / unclear": 3, "Employee monitoring": 2, "Family monitoring": 1, "Lost device locator": 1}, "5": {"Mobile spy app": 5, "Parental Monitoring": 1, "Other / unclear": 1, "Lost device locator": 1, "Employee monitoring": 1, "Women's safety": 1}, "6": {"Mobile spy app": 4, "Other / unclear": 2, "Parental Monitoring": 2, "Car locator": 1, "Employee monitoring": 1}, "7": {"Mobile spy app": 4, "Car locator": 3, "Parental Monitoring": 2, "Other / unclear": 1}, "8": {"Mobile spy app": 4, "Employee monitoring": 3, "Parental Monitoring": 2, "Car locator": 1}, "9": {"Mobile spy app": 8, "Car locator": 1, "Employee monitoring": 1}},ORDER=["Car locator", "Lost device locator", "Parental Monitoring", "Family monitoring", "Employee monitoring", "Women's safety", "Mobile spy app", "Other / unclear"],COLORS={"Car locator": "#38bdf8", "Lost device locator": "#22d3ee", "Parental Monitoring": "#a78bfa", "Family monitoring": "#c084fc", "Employee monitoring": "#fbbf24", "Women's safety": "#f472b6", "Mobile spy app": "#fb7185", "Other / unclear": "#64748b"};
@@ -126,7 +125,7 @@ COUNTS.forEach((c,g)=>{const col=document.createElement('div');col.className='co
  col.onclick=()=>sc(g);col.onmouseenter=()=>sc(g);chart.appendChild(col);
  const t=document.createElement('div');t.className='t';t.textContent=g;x1.appendChild(t);});
 function sc(g){document.querySelectorAll('.col').forEach(c=>c.classList.toggle('sel',+c.dataset.g===g));
- const l=CAPS[g];cap.innerHTML=l?`At a gap of <b>${g}</b>, apps most often:`+l.map(o=>`<div class="row"><span>${o.dir} <b>${o.cap}</b></span><span>${o.pct}%</span></div>`).join(''):`At a gap of <b>${g}</b> there’s no single dominant pattern.`;}
+ const DIR={hides:'under-disclose',fakes:'over-disclose'};const l=CAPS[g];cap.innerHTML=l?`At a gap of <b>${g}</b>, the capabilities apps most often <b>under- or over-disclose</b> (share of all apps here):`+l.map(o=>`<div class="row"><span>${DIR[o.dir]||o.dir} <b>${o.cap}</b></span><span>${o.pct}%</span></div>`).join(''):`At a gap of <b>${g}</b> there’s no single dominant pattern.`;}
 // composition bar graph (vertical 100% stacked)
 const cc=document.getElementById('compchart'),x2=document.getElementById('xaxis2');
 for(let g=0;g<10;g++){const m=COMP[g]||{},tot=Object.values(m).reduce((a,b)=>a+b,0)||1;
